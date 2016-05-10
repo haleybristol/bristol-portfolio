@@ -1,7 +1,29 @@
 * {
-  font-family: 'Arimo', sans-serif; }
+  font-family: 'Voltaire', sans-serif; }
 
 h1, h4 {
   text-align: center; }
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px; }
+
+.linked {
+  margin-left: 20px; }
+
+@media only screen and (max-width: 375px) {
+  body, html {
+    margin: 0; }
+
+  section {
+    text-align: center; }
+
+  img {
+    width: 470px; } }
+i {
+  text-decoration: none;
+  color: black; }
 
 /*# sourceMappingURL=main.css.map */
