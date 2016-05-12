@@ -1,43 +1,159 @@
-
 * {
-  font-family: 'Voltaire', sans-serif;
+
 }
 
-h1, h4 {
-  text-align: center;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 10px;
-}
-
-.linked {
-  margin-left: 20px;
-}
-@media only screen and (max-width: 375px) {
   body, html {
     margin: 0;
   }
-  section {
-    text-align: center;
+
+  i {
+    text-decoration: none;
+    color: black;
   }
-  img {
-    width: 470px;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    .fa-bars {
+      margin: 15px;
+    }
+    .tri {
+      text-align: right;
+      img {
+        width: 30px;
+        margin: 15px;
+      }
+    }
+    .work, .about, .contact {
+      display: none;
+      margin: 0 10px;
+      font-family: 'Voltaire', sans-serif;
+    }
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .description {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 71vh;
+      padding-top: 20vh;
+      width: 100%;
+      background-image: url("../img/fur.jpg");
+      background-size: cover;
+      .job {
+        color: white;
+        font-family: 'Roboto Condensed', sans-serif;
+        letter-spacing: 2px;
+      }
+    }
+
+    h2 {
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    h1, h4 {
+      text-align: center;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    p {
+      width: 320px;
+      text-align: center;
+      margin: 0 10px;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+    h6 {
+      width: 320px;
+      text-align: center;
+      margin: 0 10px;
+      font-family: 'Roboto Condensed', sans-serif;
+      a {
+        text-decoration: none;
+        color: #63BBD0;
+      }
+    }
+
+    .collab {
+      margin-top: 40px;
+    }
+
+    .blog {
+      margin-top: 40px;
+    }
+
+    .nfc {
+      margin-top: 40px;
+    }
+
+    .pics {
+      width: 320px;
+      margin: 0 10px;
+    }
+    .about {
+      .me {
+      background-image: url("../img/me.jpg");
+      border-radius: 100%;
+      border: 1px solid gray;
+      width: 160px;
+      height: 160px;
+      background-size: cover;
+      }
+    }
+  }
+
+@media only screen and (min-device-width: 768px){
+  nav {
+    display: flex;
+    align-items: center;
+
+    .work, .about, .contact {
+      margin: 10px 30px;
+      display: inline;
+      justify-content: flex-end;
+    }
+    .tri {
+      text-align: left;
+      flex: 2;
+      img {
+        width: 35px;
+        margin-left: 23px;
+      }
+    }
+    .fa-bars {
+      display: none;
+    }
+  }
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+    img {
+      width: 320px;
+      height: 250px;
+    }
+    .mood {
+      margin-top: 40px;
+    }
   }
 }
+
+.thumbnail {margin-bottom:6px;}
+
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+  margin-top:10%;
+  width:5%;
+}
+
+
+
+
 
 // section {
 //   display: flex;
 // }
 
-i {
-  text-decoration: none;
-  color: black;
 
-}
 
 // img {
 //   width: 557px;

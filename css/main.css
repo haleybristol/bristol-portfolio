@@ -1,29 +1,108 @@
-* {
-  font-family: 'Voltaire', sans-serif; }
+body, html {
+  margin: 0; }
 
-h1, h4 {
-  text-align: center; }
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 10px; }
-
-.linked {
-  margin-left: 20px; }
-
-@media only screen and (max-width: 375px) {
-  body, html {
-    margin: 0; }
-
-  section {
-    text-align: center; }
-
-  img {
-    width: 470px; } }
 i {
   text-decoration: none;
   color: black; }
+
+nav {
+  display: flex;
+  justify-content: space-between; }
+  nav .fa-bars {
+    margin: 15px; }
+  nav .tri {
+    text-align: right; }
+    nav .tri img {
+      width: 30px;
+      margin: 15px; }
+  nav .work, nav .about, nav .contact {
+    display: none;
+    margin: 0 10px;
+    font-family: 'Voltaire', sans-serif; }
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .container .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 71vh;
+    padding-top: 20vh;
+    width: 100%;
+    background-image: url("../img/fur.jpg");
+    background-size: cover; }
+    .container .description .job {
+      color: white;
+      font-family: 'Roboto Condensed', sans-serif;
+      letter-spacing: 2px; }
+  .container h2 {
+    font-family: 'Roboto Condensed', sans-serif; }
+  .container h1, .container h4 {
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif; }
+  .container p {
+    width: 320px;
+    text-align: center;
+    margin: 0 10px;
+    font-family: 'Roboto Condensed', sans-serif; }
+  .container h6 {
+    width: 320px;
+    text-align: center;
+    margin: 0 10px;
+    font-family: 'Roboto Condensed', sans-serif; }
+    .container h6 a {
+      text-decoration: none;
+      color: #63BBD0; }
+  .container .collab {
+    margin-top: 40px; }
+  .container .blog {
+    margin-top: 40px; }
+  .container .nfc {
+    margin-top: 40px; }
+  .container .pics {
+    width: 320px;
+    margin: 0 10px; }
+  .container .about .me {
+    background-image: url("../img/me.jpg");
+    border-radius: 100%;
+    border: 1px solid gray;
+    width: 160px;
+    height: 160px;
+    background-size: cover; }
+
+@media only screen and (min-device-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center; }
+    nav .work, nav .about, nav .contact {
+      margin: 10px 30px;
+      display: inline;
+      justify-content: flex-end; }
+    nav .tri {
+      text-align: left;
+      flex: 2; }
+      nav .tri img {
+        width: 35px;
+        margin-left: 23px; }
+    nav .fa-bars {
+      display: none; }
+
+  .works {
+    display: flex;
+    flex-wrap: wrap; }
+    .works img {
+      width: 320px;
+      height: 250px; }
+    .works .mood {
+      margin-top: 40px; } }
+.thumbnail {
+  margin-bottom: 6px; }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+  margin-top: 10%;
+  width: 5%; }
 
 /*# sourceMappingURL=main.css.map */
