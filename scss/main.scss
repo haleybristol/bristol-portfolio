@@ -72,6 +72,7 @@
       a {
         text-decoration: none;
         color: #63BBD0;
+        font-family: 'Roboto Condensed', sans-serif;
       }
     }
 
@@ -138,6 +139,13 @@
       margin-top: 40px;
     }
   }
+}
+
+.moody {
+  color: #63BBD0;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 320px;
+  text-align: center;
 }
 
 .thumbnail {margin-bottom:6px;}

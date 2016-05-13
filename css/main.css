@@ -55,7 +55,8 @@ nav {
     font-family: 'Roboto Condensed', sans-serif; }
     .container h6 a {
       text-decoration: none;
-      color: #63BBD0; }
+      color: #63BBD0;
+      font-family: 'Roboto Condensed', sans-serif; }
   .container .collab {
     margin-top: 40px; }
   .container .blog {
@@ -101,6 +102,12 @@ nav {
       height: 250px; }
     .works .mood {
       margin-top: 40px; } }
+.moody {
+  color: #63BBD0;
+  font-family: 'Roboto Condensed', sans-serif;
+  width: 320px;
+  text-align: center; }
+
 .thumbnail {
   margin-bottom: 6px; }
 
